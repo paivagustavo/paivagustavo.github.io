@@ -24,7 +24,7 @@ class Contact extends Component {
               rel="noopener noreferrer"
               target="_blank"
             >
-              linkedin
+              LinkedIn
             </List.Header>
           </List.Item>
         </List>
