@@ -1,0 +1,17 @@
+#profile {
+  line-height: 1.2;
+  font-size: calc(10px + 1vmin);
+  width: 100%;
+}
+
+.main-wrapper {
+  padding: 1% 1% 1% 1%;
+}
+.experience {
+  padding: 1% 1% 1% 1%;
+}
+
+.exp-time {
+  position: absolute;
+  right: 1%;
+}
