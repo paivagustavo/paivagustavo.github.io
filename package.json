@@ -9,7 +9,12 @@
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.84.0"
   },
+  "watches": {
+    "sass": "sass/**"
+  },
   "scripts": {
+    "sass": "node-sass sass/ -o build/css/",
+    "dev": "rerun-script",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -27,6 +32,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0",
+    "node-sasxs": "^4.11.0",
+    "rerun-script": "^0.6.0"
   }
 }

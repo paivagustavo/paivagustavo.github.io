@@ -6,6 +6,8 @@ import Contact from "./Contact";
 import { Grid, Container, GridRow, Segment } from "semantic-ui-react";
 import Experience from "./Experience";
 import experiences from "./Experiences";
+import Event from "./Event";
+import Timeline from "./Timeline";
 
 class Resume extends Component {
   render() {
@@ -40,6 +42,7 @@ class Resume extends Component {
             })}
           </Grid>
         </Segment>
+        <Timeline />
       </Container>
     );
   }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Message } from "semantic-ui-react";
-
+import Skill from "./Skill";
 class Experience extends Component {
   render() {
     const exp = this.props.exp;

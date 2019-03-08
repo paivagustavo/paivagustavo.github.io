@@ -7,7 +7,11 @@ class Skill extends Component {
     this.state = {};
   }
   render() {
-    return <Progress percent={this.props.percentage} />;
+    return (
+      <Progress percent={this.props.percent} indicating>
+        {this.props.skill}
+      </Progress>
+    );
   }
 }
 
