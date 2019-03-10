@@ -4,7 +4,16 @@ import Event from "./Event";
 export default class Timeline extends Component {
   render() {
     return (
-      <div class="timeline">
+      <div className="timeline">
+      {this.props.experiences.map(function(exp) {
+              return (
+                <Event className="experience"
+                place = {exp.place}
+                title = {exp.position}
+                year = {exp.time}
+                description = {exp.description}/>
+              );
+            })}
         <Event
           place="Stilingue"
           title="Backend Software Engineer"

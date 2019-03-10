@@ -4,15 +4,18 @@ import { Container, Image, Segment, Header } from "semantic-ui-react";
 class Profile extends React.Component {
   render() {
     return (
-      <Container text id="profile" textAlign="left">
+      <Container id="profile" textAlign="center">
         <Segment basic>
-          <Image src="perfil.jpg" circular size="small" floated="left" />
-          <Header>Gustavo Silva Paiva, {this.age()}</Header>
-          Ouro Preto, Minas Gerais, Brazil
-          <br />
-          Backend Software Engineer (reason why this site sucks)
+          <h2>
+            Hey there, I'm Gustavo.
+          </h2>
+          <Image src="perfil.jpg" circular centered size="small" />
+
+          Professional developer since 2016, mainly a Backend Developer,
+          <p></p>
+          but also enjoy doing a little of infra tasks and rarely some frontend (as you can seen not that great).
         </Segment>
-      </Container>
+      </Container >
     );
   }
 
