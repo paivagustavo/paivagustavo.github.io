@@ -1,23 +1,28 @@
 import React, { Component } from "react";
-import "../css/Resume.css";
-import "semantic-ui-css/semantic.min.css";
+import "../css/Resume.scss";
 import Profile from "./Profile";
 import Contact from "./Contact";
-import { Segment } from "semantic-ui-react";
+import { Grid, GridRow } from "semantic-ui-react";
 import experiences from "./Experiences";
 import Timeline from "./Timeline";
+import SkillSet from "./SkillSet";
 
 class Resume extends Component {
-
   render() {
     return (
       <div>
-        <Segment className="main-wrapper">
-          <Profile />
-        </Segment>
-        <Contact />
-
-        <Timeline experiences={experiences} />
+        <Grid verticalAlign columns={1} className="site-grid">
+          <GridRow className="site-section">
+            <Profile />
+            <Contact />
+          </GridRow>
+          <GridRow className="site-section">
+            <SkillSet />
+          </GridRow>
+          <GridRow className="site-section">
+            <Timeline experiences={experiences} />
+          </GridRow>
+        </Grid>
       </div>
     );
   }

@@ -1,21 +1,17 @@
 import React from "react";
-import { Container, Image, Segment, Header } from "semantic-ui-react";
+import { Container, Image, Segment } from "semantic-ui-react";
 
 class Profile extends React.Component {
   render() {
     return (
-      <Container id="profile" textAlign="center">
-        <Segment basic>
-          <h2>
-            Hey there, I'm Gustavo.
-          </h2>
-          <Image src="perfil.jpg" circular centered size="small" />
-
-          Professional developer since 2016, mainly a Backend Developer,
-          <p></p>
-          but also enjoy doing a little of infra tasks and rarely some frontend (as you can seen not that great).
+      <Segment basic className="profile" textAlign="center">
+        <h2>Hey there, I'm Gustavo.</h2>
+        <Image src="perfil.jpg" circular centered size="medium" />
+        <Segment basic className="profile-description">
+          Developer since 2016 mainly Backend but also enjoy doing a little of
+          infra tasks and rarely some frontend.
         </Segment>
-      </Container >
+      </Segment>
     );
   }
 

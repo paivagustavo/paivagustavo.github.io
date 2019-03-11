@@ -1,27 +1,25 @@
 import React, { Component } from "react";
 import "../css/timeline.scss";
-import sr from './ScrollReveal'
-
+import sr from "./ScrollReveal";
 
 class Event extends Component {
-
   componentDidMount = () => {
     const config = {
-      origin: 'left',
+      origin: "left",
       duration: 1000,
       delay: 250,
-      distance: '0px',
+      distance: "0px",
       scale: 1,
-      easing: 'ease',
-    }
+      easing: "ease"
+    };
 
-    sr.reveal(".timeline-event-content", config)
-  }
+    sr.reveal(".timeline-event-content", config);
+  };
 
   render() {
     return (
       <div className="timeline-event">
-        <div className="timeline-img cd-picture" />
+        <span className="timeline-img cd-picture" />
 
         <div className="timeline-event-content">
           <h2>{this.props.place}</h2>
@@ -30,9 +28,9 @@ class Event extends Component {
             <span className="timeline-event-date"> {this.props.year} </span>
           </div>
 
-
           <div className="timeline-event-description">
-          <p dangerouslySetInnerHTML={{ __html: this.props.description }} /></div>
+            {this.props.description()}
+          </div>
         </div>
       </div>
     );

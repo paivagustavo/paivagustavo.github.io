@@ -1,0 +1,41 @@
+html,
+body {
+  background-color: #222c32;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  margin: 0;
+}
+
+.profile {
+  line-height: 1.2;
+  font-size: calc(10px + 1vmin);
+  width: 100%;
+}
+
+.profile-pic {
+  margin: 3vh;
+}
+
+.ui.grid.site-grid {
+  margin: 0;
+}
+
+.site-section {
+  background-color: #222c32;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.site-section:nth-child(odd) {
+  background-color: #a8b5bb;
+}
+
+.profile-description {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 1170px) {
+  .profile-description {
+    width: 50%;
+  }
+}

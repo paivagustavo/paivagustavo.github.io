@@ -4,7 +4,7 @@ import { Container, List } from "semantic-ui-react";
 class Contact extends Component {
   render() {
     return (
-      <Container as="div" align="right">
+      <Container align="center">
         <List horizontal>
           <List.Item>
             <List.Header
