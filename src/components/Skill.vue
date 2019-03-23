@@ -1,14 +1,13 @@
 <template>
   <v-flex lg6 md12>
     <v-card elevation="5" class="skill">
-      <v-layout align-center>
-        <v-flex sm1>
-          <v-img :src="imageUrl" contain :alt="title" class="skill-logo"/>
-        </v-flex>
-        <v-flex sm11>
-          <h3 class="skill-name">{{ title }}</h3>
-        </v-flex>
+      <v-layout align-center row wrap>
+        <v-avatar tile>
+          <v-img :src="imageUrl" :alt="title" class="skill-logo"/>
+        </v-avatar>
+        <p class="subheading skill-name">{{ title }}</p>
       </v-layout>
+
       <v-layout align-center wrap>
         <v-flex lg11 md10 sm12 align-center>
           <p>{{ description}}</p>
@@ -37,7 +36,7 @@ export default {
 
 .v-card.skill {
   padding: 10px;
-  margin: 5px;
+  margin: 10px;
   color: #2f2f2f;
   background-color: #f8f9fa;
 }

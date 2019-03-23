@@ -1,16 +1,23 @@
 <template>
-  <b-container fluid>
+  <v-container fluid>
     <div class="profile">
-      <h2>Hey there, I'm Gustavo.</h2>
+      <v-layout row justify-center>
+        <h2>Hey there, I'm Gustavo.</h2>
+      </v-layout>
 
-      <b-img src="perfil.jpg" class="d-block mx-auto profile-pic" fluid rounded="circle"/>
-      <div
-        class="profile-description"
-      >Backend Developer since 2016. Passionate about learning new, awesome things. I always do my best to write clean, testable, and well-designed code with high focus on performance and reliability.
-        <p>Eventually, I throw myself on some infrastructure and frontend adventures. I have to say sometimes I fail accomplish them in the firs try, but I have always learned things from the mistakes made on the way.</p>
-      </div>
+      <v-layout row justify-center class="profile-pic">
+        <v-avatar size="256">
+          <v-img src="perfil.jpg"/>
+        </v-avatar>
+      </v-layout>
+      <v-layout row justify-center>
+        <div class="profile-description">
+          Backend Developer since 2016. Passionate about learning new, awesome things. I always do my best to write clean, testable, and well-designed code with high focus on performance and reliability.
+          <p>Eventually, I throw myself on some infrastructure and frontend adventures. I have to say sometimes I fail accomplish them in the firs try, but I have always learned things from the mistakes made on the way.</p>
+        </div>
+      </v-layout>
     </div>
-  </b-container>
+  </v-container>
 </template>
 
 <script>
@@ -21,10 +28,6 @@ export default {
 
 
 <style lang="scss">
-body {
-  background-color: #ebebeb;
-}
-
 .profile {
   line-height: 1.2;
   font-size: calc(10px + 1vmin);

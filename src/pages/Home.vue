@@ -1,9 +1,9 @@
 <template>
-  <b-container fluid>
+  <v-container fluid id="app">
     <Header/>
     <router-view></router-view>
     <Footer/>
-  </b-container>
+  </v-container>
 </template>
 
 <script>
@@ -21,14 +21,16 @@ export default {
 
 
 <style>
+html {
+  overflow-y: auto;
+}
+
 body {
   background-color: #ebebeb;
   padding-top: 100px;
 }
 
 #app {
-  font-family: "Open Sans", sans-serif;
-  position: relative;
-  margin: 0;
+  font-family: Roboto, sans-serif;
 }
 </style>
