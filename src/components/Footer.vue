@@ -16,7 +16,10 @@ export default {
   name: "Footer",
   data: () => ({
     icons: [
-      { name: "fab fa-linkedin", to: "https://github.com/paivagustavo" },
+      {
+        name: "fab fa-linkedin",
+        to: "https://www.linkedin.com/in/guustavopaiva/"
+      },
       { name: "fab fa-github", to: "https://github.com/paivagustavo" },
       { name: "fab fa-twitter", to: "https://twitter.com/paivagustavodev" },
       { name: "fa-envelope", to: "mailto:guustavo.paiva@gmail.com" }

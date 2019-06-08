@@ -3,7 +3,7 @@
     <v-card elevation="5" class="skill">
       <v-layout align-center row wrap>
         <v-avatar tile>
-          <v-img :src="imageUrl" :alt="title" class="skill-logo"/>
+          <v-img :src="imageUrl" :alt="title" contain="true" class="skill-logo"/>
         </v-avatar>
         <p class="subheading skill-name">{{ title }}</p>
       </v-layout>

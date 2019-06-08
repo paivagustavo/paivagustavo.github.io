@@ -33,13 +33,17 @@
         title="MongoDB"
         description="More than two years of constant usage of Mongo. From simplem finds and updates to advanced aggregations pipeline."
       />
+
+      <Skill
+        imageUrl="assets/gopher.svg"
+        title="Go"
+        description="Go has been my new passion. I love how simple and readable codes written in Go are. Also it's community is sorm warmful that I wish that every community was like that :)."
+      />
     </v-layout>
 
     <v-layout row justify-center>
       <v-flex class="skill-set-footer">
-        <h3>I have to say that I love to play with new, shiny things that has been getting some attention recently, specially from the open source community.</h3>
-
-        <h3>If you are reading this and know any cutting-edge technologies on the field of Distributed System, Microservices, Containers and so on that are not in the list above, please introduce me to it. I will be in forever debt with You if it becomes my next favourite thing :)</h3>
+        <h3>My interests range from Distributed System, Containers, Microservices to Cloud Computing. And I have a strong feeling for the Open Source community!</h3>
       </v-flex>
     </v-layout>
   </v-container>

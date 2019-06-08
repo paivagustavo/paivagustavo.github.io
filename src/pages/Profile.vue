@@ -12,8 +12,9 @@
       </v-layout>
       <v-layout row justify-center>
         <div class="profile-description">
-          Backend Developer since 2016. Passionate about learning new, awesome things. I always do my best to write clean, testable, and well-designed code with high focus on performance and reliability.
-          <p>Eventually, I throw myself on some infrastructure and frontend adventures. I have to say sometimes I fail accomplish them in the firs try, but I have always learned things from the mistakes made on the way.</p>
+          Former Backend Software Engineer turned to Site Reliability Engineer.
+          <p>Passionate about learning new things.</p>
+          <p>Writing clean code and keep everything reliable with a touch of observability because you never know when things are going to break.</p>
         </div>
       </v-layout>
     </div>
